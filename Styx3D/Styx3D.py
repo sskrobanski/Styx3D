@@ -1,10 +1,28 @@
+import OpenGL
+from OpenGL.GL import *
+from OpenGL.GLUT import *
+
+def render():
+    glClear(GL_COLOR_BUFFER_BIT); 
+    glutSwapBuffers(); 
+    return None
+
+def mouse_event(button, state, x, y):
+    return None
+
+def close_event():
+    return true
+
+glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB)
+glutInitWindowSize(1024, 1024)
+glutInitWindowPosition(100, 100) 
+glutCreateWindow("Styx3D Demo")
+glutDisplayFunc(render)
+glutMouseFunc(mouse_event)
+#glutCloseFunc(close_event)
 
 
-from vector3 import *
+glClearColor(1.0, 0.0, 0.0, 1.0)
 
-v1 = vector3(1, 0, 0)
-v2 = vector3(0, 0, 0)
 
-print v1.magnitude()
-print v2.magnitude()
-print v1.distance(v2)
+glutMainLoop();

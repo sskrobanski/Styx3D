@@ -25,9 +25,12 @@
     <Compile Include="maths\matrix4.py" />
     <Compile Include="Styx3D.py" />
     <Compile Include="maths\vector3.py" />
+    <Compile Include="styx\renderer.py" />
+    <Compile Include="styx\scene.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="maths\" />
+    <Folder Include="styx\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
 </Project>
